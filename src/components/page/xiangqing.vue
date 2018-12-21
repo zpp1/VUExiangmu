@@ -1,6 +1,7 @@
 <template>
   <div id="xiangqing">
     {{_xiangqingcount}}
+    <p>hahah</p>
   </div>
 </template>
 <script>
@@ -14,7 +15,7 @@
     },
     computed:{
       ...mapState({
-        _xiangqingcount:(state)=>state.count,
+        _xiangqingcount(state){state.count},
       })
     }
   }
